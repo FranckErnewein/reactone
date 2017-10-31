@@ -10,11 +10,14 @@ var _react2 = babelHelpers.interopRequireDefault(_react);
 
 var _reactNative = require('react-native');
 
+var _styles = require('../../constants/styles');
+
 function PageUn() {
 
     return _react2.default.createElement(
         _reactNative.View,
-        { style: styles.container, __source: {
+        {
+            __source: {
                 fileName: _jsxFileName,
                 lineNumber: 6
             }
