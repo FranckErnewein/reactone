@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "reactnative-example",
+    "description": "Projet de test",
+    "slug": "reactnative-example",
+    "sdkVersion": "21.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#cccccc",
+    "icon": "./assets/icons/app-icon.png",
+    "loading": {
+      "icon": "./assets/icons/loading-icon.png",
+      "hideExponentText": false
+    }
+  }
+}

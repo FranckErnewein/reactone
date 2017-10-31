@@ -1,0 +1,107 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _jsxFileName = '/home/nono/Bureau/www/ReactOne/src/components/common/Routes.js';
+exports.default = Routes;
+
+var _react = require('react');
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _reactRouterNative = require('react-router-native');
+
+var routes = [{ path: '/pageun',
+  component: PageUn
+}, { path: '/pagedeux',
+  component: PageDeux,
+  routes: [{ path: '/pagedeux/subpageun',
+    component: SubPageUn
+  }, { path: '/pagedeux/subpagedeux',
+    component: SubPageDeux
+  }]
+}];
+function Routes() {
+
+  return _react2.default.createElement(
+    _reactRouterNative.NativeRouter,
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      }
+    },
+    _react2.default.createElement(
+      View,
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        }
+      },
+      _react2.default.createElement(
+        View,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
+          }
+        },
+        _react2.default.createElement(
+          _reactRouterNative.Link,
+          {
+            to: '/pageun',
+            underlayColor: '#f0f4f7', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 24
+            }
+          },
+          _react2.default.createElement(
+            Text,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 27
+              }
+            },
+            'page un'
+          )
+        ),
+        _react2.default.createElement(
+          _reactRouterNative.Link,
+          {
+            to: '/pagedeux',
+            underlayColor: '#f0f4f7', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 29
+            }
+          },
+          _react2.default.createElement(
+            Text,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 32
+              }
+            },
+            'page deux'
+          )
+        )
+      ),
+      _react2.default.createElement(_reactRouterNative.Route, { exact: true, path: '/', component: PageUn, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        }
+      }),
+      _react2.default.createElement(_reactRouterNative.Route, { path: '/pageun', component: PageUn, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        }
+      }),
+      _react2.default.createElement(_reactRouterNative.Route, { path: '/pagedeux', component: PageDeux, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        }
+      })
+    )
+  );
+}
