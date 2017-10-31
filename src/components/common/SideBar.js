@@ -5,7 +5,23 @@ import { NativeRouter, Route, Link } from 'react-router-native';
 import PageUn from '../pages/PageUn';
 import PageDeux from '../pages/PageDeux';
 
+const routes = [
+  { path: '/',
+    exact: true,
+    title: 'Home'
+  },
+  { path: '/pageun',
+    component: PageUn,
+    title: 'Page Un'
+  },
+  { path: '/pagedeux',
+    component: PageDeux,
+    title:'Page Deux'
+  }
+];
+
 export default class SideBar extends React.Component {
+
     render() {
     return (
       <View style={styles.nav}>
@@ -19,13 +35,13 @@ export default class SideBar extends React.Component {
           to="/pageun"
           underlayColor='#f0f4f7'
           style={styles.navItem}>
-            <Text>Page un</Text>
+            <Text>Page Un</Text>
         </Link>
         <Link
           to="/pagedeux"
           underlayColor='#f0f4f7'
-          style={styles.navItem} >
-            <Text>Page deux</Text>
+          style={styles.navItem}>
+            <Text>Page Deux</Text>
         </Link>
       </View>
     )

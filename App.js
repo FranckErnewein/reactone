@@ -6,22 +6,10 @@ import PageUn from './src/components/pages/PageUn';
 import PageDeux from './src/components/pages/PageDeux';
 import SideBar from './src/components/common/SideBar';
 
-const routes = [
-  { path: '/',
-    exact: true
-  },
-  { path: '/pageun',
-    component: PageUn
-  },
-  { path: '/pagedeux',
-    component: PageDeux
-  }
-];
-
 export class Home extends React.Component {
   render() {
     return (
-      <Text>Home</Text>
+      <Text>Home</Text> 
     );
   }
 }
@@ -30,14 +18,14 @@ export default class App extends React.Component {
   render() {
     return (
       <NativeRouter>
-      <View style={styles.container}>
-  <SideBar/>
-    <View>
-      <Route exact path="/" component={Home}/>
-      <Route path="/pageun" component={PageUn}/>
-      <Route path="/pagedeux" component={PageDeux}/>
-    </View>
-      </View>
+        <View style={styles.container}>
+          <SideBar/>
+          <View>
+            <Route exact path="/" component={Home}/>
+            <Route path="/pageun" component={PageUn}/>
+            <Route path="/pagedeux" component={PageDeux}/>
+          </View>
+        </View>
       </NativeRouter>
     );
   }

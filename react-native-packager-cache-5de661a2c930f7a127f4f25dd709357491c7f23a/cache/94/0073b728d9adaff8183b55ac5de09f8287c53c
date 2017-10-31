@@ -26,14 +26,6 @@ var _SideBar = require('./src/components/common/SideBar');
 
 var _SideBar2 = babelHelpers.interopRequireDefault(_SideBar);
 
-var routes = [{ path: '/',
-  exact: true
-}, { path: '/pageun',
-  component: _PageUn2.default
-}, { path: '/pagedeux',
-  component: _PageDeux2.default
-}];
-
 var Home = exports.Home = function (_React$Component) {
   babelHelpers.inherits(Home, _React$Component);
 
@@ -50,7 +42,7 @@ var Home = exports.Home = function (_React$Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 24
+            lineNumber: 12
           }
         },
         'Home'
@@ -76,20 +68,20 @@ var App = function (_React$Component2) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 32
+            lineNumber: 20
           }
         },
         _react2.default.createElement(
           _reactNative.View,
           { style: _styles.styles.container, __source: {
               fileName: _jsxFileName,
-              lineNumber: 33
+              lineNumber: 21
             }
           },
           _react2.default.createElement(_SideBar2.default, {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 34
+              lineNumber: 22
             }
           }),
           _react2.default.createElement(
@@ -97,22 +89,22 @@ var App = function (_React$Component2) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 35
+                lineNumber: 23
               }
             },
             _react2.default.createElement(_reactRouterNative.Route, { exact: true, path: '/', component: Home, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 36
+                lineNumber: 24
               }
             }),
             _react2.default.createElement(_reactRouterNative.Route, { path: '/pageun', component: _PageUn2.default, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 37
+                lineNumber: 25
               }
             }),
             _react2.default.createElement(_reactRouterNative.Route, { path: '/pagedeux', component: _PageDeux2.default, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 38
+                lineNumber: 26
               }
             })
           )
