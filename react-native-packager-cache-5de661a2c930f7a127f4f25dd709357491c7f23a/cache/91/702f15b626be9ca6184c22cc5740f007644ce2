@@ -1,33 +1,31 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var _jsxFileName = '/home/nono/Bureau/www/ReactOne/src/components/pages/PageUn.js';
-exports.default = PageUn;
+var _jsxFileName = '/home/nono/Bureau/www/ReactOne/src/components/pages/PageDeux.js';
+exports.default = PageDeux;
 
 var _react = require('react');
 
 var _react2 = babelHelpers.interopRequireDefault(_react);
 
-var _reactNative = require('react-native');
-
-function PageUn() {
+function PageDeux() {
 
     return _react2.default.createElement(
-        _reactNative.View,
+        View,
         { style: styles.container, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 6
+                lineNumber: 5
             }
         },
         _react2.default.createElement(
-            _reactNative.Text,
+            Text,
             {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 7
+                    lineNumber: 6
                 }
             },
-            'Page Un'
+            'Page deux'
         )
     );
 }
