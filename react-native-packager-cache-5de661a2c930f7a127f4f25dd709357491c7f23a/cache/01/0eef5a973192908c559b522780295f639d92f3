@@ -6,16 +6,23 @@ var styles = exports.styles = {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center'
-  },
-  bigblue: {
-    color: 'blue',
-    fontWeight: 'bold',
-    fontSize: 30
+    justifyContent: 'center',
+    marginTop: 25,
+    padding: 10
   },
   header: {
-    color: 'blue',
-    fontWeight: 'normal',
     fontSize: 20
+  },
+  nav: {
+    flexDirection: 'row',
+    justifyContent: 'space-around'
+  },
+  navItem: {
+    flex: 1,
+    alignItems: 'center',
+    padding: 10
+  },
+  subNavItem: {
+    padding: 5
   }
 };

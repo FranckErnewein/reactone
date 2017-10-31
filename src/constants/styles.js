@@ -4,15 +4,22 @@ export const styles = {
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  bigblue: {
-    color: 'blue',
-    fontWeight: 'bold',
-    fontSize: 30,
+    marginTop: 25,
+    padding: 10,
   },
   header: {
-    color: 'blue',
-    fontWeight: 'normal',
     fontSize: 20,
   },
+  nav: {
+    flexDirection: 'row',
+    justifyContent: 'space-around'
+  },
+  navItem: {
+    flex: 1,
+    alignItems: 'center',
+    padding: 10,
+  },
+  subNavItem: {
+    padding: 5,
+  }
 };

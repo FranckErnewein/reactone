@@ -29,17 +29,16 @@ export class Home extends React.Component {
 export default class App extends React.Component {
   render() {
     return (
+      <NativeRouter>
       <View style={styles.container}>
-        <SideBar/>
-  <NativeRouter>
+  <SideBar/>
     <View>
       <Route exact path="/" component={Home}/>
       <Route path="/pageun" component={PageUn}/>
       <Route path="/pagedeux" component={PageDeux}/>
     </View>
-  </NativeRouter>
-
       </View>
+      </NativeRouter>
     );
   }
 }
