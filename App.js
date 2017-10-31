@@ -4,9 +4,11 @@ import { styles } from './src/constants/styles';
 import { NativeRouter, Route, Link } from 'react-router-native';
 import { PageUn } from './src/components/pages/PageUn';
 import { PageDeux } from './src/components/pages/PageDeux';
-import { NavBar } from './src/components/common/NavBar';
-
+import { SideBar } from './src/components/common/SideBar';
 const routes = [
+  { path: '/',
+    exact: true
+  },
   { path: '/pageun',
     component: PageUn
   },
@@ -19,14 +21,8 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-          <Text>yop</Text>
-          <NativeRouter>
-            <View>
-                <Route exact path="/" component={PageUn}/>
-                <Route path="/pageun" component={PageUn}/>
-                <Route path="/pagedeux" component={PageDeux}/>
-            </View>
-        </NativeRouter>
+        <SideBar/>
+        <Text>Home</Text>
       </View>
     );
   }
