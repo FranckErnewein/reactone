@@ -4,7 +4,7 @@ import { NativeRouter, Route, Link } from 'react-router-native';
 import { PageUn } from '../pages/PageUn';
 import { PageDeux } from '../pages/PageDeux';
 
-class SideBar extends React.Component {
+export default class SideBar extends React.Component {
     render() {
     return (
      <NativeRouter>
@@ -27,5 +27,3 @@ class SideBar extends React.Component {
     )
   }
 }
-
-export default SideBar

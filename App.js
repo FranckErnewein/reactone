@@ -5,6 +5,7 @@ import { NativeRouter, Route, Link } from 'react-router-native';
 import { PageUn } from './src/components/pages/PageUn';
 import { PageDeux } from './src/components/pages/PageDeux';
 import { SideBar } from './src/components/common/SideBar';
+
 const routes = [
   { path: '/',
     exact: true
