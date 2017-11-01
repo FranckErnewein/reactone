@@ -2,3 +2,5 @@ node_modules/
 .expo/
 npm-debug.*
 react-native-packager-cache-5de661a2c930f7a127f4f25dd709357491c7f23a/
+adb.0.log
+haste-map-react-native-packager-1-3392332816d2a8a8ee99f4fcde3eb464

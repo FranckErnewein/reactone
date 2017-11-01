@@ -9,7 +9,7 @@ import SideBar from './src/components/common/SideBar';
 export class Home extends React.Component {
   render() {
     return (
-      <Text>Home</Text> 
+      <Text>Home</Text>
     );
   }
 }
