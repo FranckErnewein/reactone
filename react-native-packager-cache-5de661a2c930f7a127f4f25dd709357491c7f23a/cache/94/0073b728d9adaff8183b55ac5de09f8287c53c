@@ -26,6 +26,10 @@ var _SideBar = require('./src/components/common/SideBar');
 
 var _SideBar2 = babelHelpers.interopRequireDefault(_SideBar);
 
+var _FontAwesome = require('@expo/vector-icons/FontAwesome');
+
+var _FontAwesome2 = babelHelpers.interopRequireDefault(_FontAwesome);
+
 var Home = exports.Home = function (_React$Component) {
   babelHelpers.inherits(Home, _React$Component);
 
@@ -42,7 +46,7 @@ var Home = exports.Home = function (_React$Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 12
+            lineNumber: 13
           }
         },
         'Home'
@@ -68,20 +72,20 @@ var App = function (_React$Component2) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 20
+            lineNumber: 21
           }
         },
         _react2.default.createElement(
           _reactNative.View,
           { style: _styles.styles.container, __source: {
               fileName: _jsxFileName,
-              lineNumber: 21
+              lineNumber: 22
             }
           },
           _react2.default.createElement(_SideBar2.default, {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 22
+              lineNumber: 23
             }
           }),
           _react2.default.createElement(
@@ -89,22 +93,29 @@ var App = function (_React$Component2) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 23
-              }
-            },
-            _react2.default.createElement(_reactRouterNative.Route, { exact: true, path: '/', component: Home, __source: {
-                fileName: _jsxFileName,
                 lineNumber: 24
               }
-            }),
-            _react2.default.createElement(_reactRouterNative.Route, { path: '/pageun', component: _PageUn2.default, __source: {
+            },
+            _react2.default.createElement(_FontAwesome2.default, { onPress: function onPress() {
+                _SideBar2.default.expandMenu;
+              }, name: 'navicon', size: 24, color: _styles.colors.txtDark, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 25
               }
             }),
-            _react2.default.createElement(_reactRouterNative.Route, { path: '/pagedeux', component: _PageDeux2.default, __source: {
+            _react2.default.createElement(_reactRouterNative.Route, { exact: true, path: '/', component: Home, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 26
+              }
+            }),
+            _react2.default.createElement(_reactRouterNative.Route, { path: '/pageun', component: _PageUn2.default, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 27
+              }
+            }),
+            _react2.default.createElement(_reactRouterNative.Route, { path: '/pagedeux', component: _PageDeux2.default, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 28
               }
             })
           )

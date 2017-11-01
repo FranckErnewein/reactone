@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Animated, Alert, Easing } from 'react-native';
 import { styles, colors } from '../../constants/styles';
 import { NativeRouter, Route, Link } from 'react-router-native';
 import PageUn from '../pages/PageUn';
@@ -22,10 +22,24 @@ const routes = [
 ];
 let SideMenuWidth = 300
 class SideBar extends React.Component {
+    constructor(props) {
+          super(props)
+          this.state = {
+              animX: new Animated.Value(-SideMenuWidth),
+              menuOpened: false
+          }
+    }
+    
+    expandMenu() {
+      this.state = {
+          animX: new Animated.Value(0),
+          menuOpened: true
+      }
+    }
 
     render() {
     return (
-        <View style={[stylemenu.sideMenu, this.props.style || {}]}>
+        <Animated.View style={[stylemenu.sideMenu, this.props.style || {}, { transform: [{translateX: this.state.animX}] }]}>
 
               <View style={{ paddingHorizontal: 30 }}>
                   <TouchableOpacity style={ stylemenu.menu }>
@@ -33,16 +47,16 @@ class SideBar extends React.Component {
                         <Link to="/"><Text style={stylemenu.menuText}>Home</Text></Link>
                   </TouchableOpacity>
                   <TouchableOpacity style={ stylemenu.menu }>
-                        <Icon name='user-o' size={24} color={colors.txtWhite} />
+                        <Icon name='university' size={24} color={colors.txtWhite} />
                         <Link to="/pageun"><Text style={stylemenu.menuText}>Page Un</Text></Link>
                   </TouchableOpacity>
                   <TouchableOpacity style={ stylemenu.menu }>
-                        <Icon name='cog' size={24} color={colors.txtWhite} />
+                        <Icon name='ship' size={24} color={colors.txtWhite} />
                         <Link to="/pagedeux"><Text style={stylemenu.menuText}>Page Deux</Text></Link>
                   </TouchableOpacity>
 
               </View>
-        </View>
+        </Animated.View>
 
     )
   }
@@ -52,9 +66,8 @@ const stylemenu = StyleSheet.create({
     sideMenu: {
         position: 'absolute',
         top: 0,
-        right: 0,
-        bottom: 0,
         left: 0,
+        bottom:0,
         width: SideMenuWidth,
         backgroundColor: '#214559',
         paddingTop:50
