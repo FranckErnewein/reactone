@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, AppRegistry, Image } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import { styles } from './src/constants/styles';
 import { NativeRouter, Route, Link } from 'react-router-native';
 import PageUn from './src/components/pages/PageUn';

@@ -4,7 +4,6 @@ export const styles = {
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 25,
     padding: 10,
   },
   header: {
@@ -23,3 +22,12 @@ export const styles = {
     padding: 5,
   }
 };
+export const colors = {
+  txtMain: '#214559',
+  txtDescription: '#757575',
+  txtDark: '#214559',
+  txtWhite: '#ffffff',
+
+  bgMain: '#214559',
+  bgWhite: '#ffffff'
+}
